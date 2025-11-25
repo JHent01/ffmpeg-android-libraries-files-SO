@@ -1,0 +1,14 @@
+prefix=/d/Work/AndroidProj/app/sampledata/out-ffmpeg-android/x86_64
+exec_prefix=${prefix}
+libdir=/d/Work/AndroidProj/app/sampledata/out-ffmpeg-android/x86_64/lib
+includedir=/d/Work/AndroidProj/app/sampledata/out-ffmpeg-android/x86_64/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 9.1.100
+Requires: 
+Requires.private: libavutil >= 60.8.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}
